@@ -17,7 +17,7 @@ I am going to add more types of transitions, keep posted.
 Transitioner(
     context: context,
     child: UnoPage(),
-    animation: AnimationType.fadeIn,
+    animation: AnimationType.fadeIn, // Optional value
     duration: Duration(milliseconds: 2000), // Optional value
     replacement: true, // Optional value
     curveType: CurveType.decelerate, // Optional value

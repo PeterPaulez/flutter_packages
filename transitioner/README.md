@@ -1,10 +1,17 @@
-![](https://img.shields.io/badge/Version-0.0.1-informational?style=flat&logo=appveyor&logoColor=ff69b4&color=brightgreen)
+![](https://img.shields.io/badge/Version-0.0.2-informational?style=flat&logo=appveyor&logoColor=ff69b4&color=brightgreen)
 
 # Transitioner
 This package helps how to manage transitions between different views/pages.  
 I am going to add more types of transitions, keep posted.
 
-## Use example case
+# Getting Started
+In the pubspec.yaml of your flutter project, add the following dependency:
+```
+dependencies:
+    transitioner: ^0.0.2
+```
+
+# Use example case
 ```dart
 /// Transitioner Class
 ///
@@ -23,6 +30,22 @@ Transitioner(
     curveType: CurveType.decelerate, // Optional value
 );
 ```
+
+# Different types of principal Transition
+- normal
+- fadeIn
+- slideRight
+- slideLeft
+- slideTop
+- slideBottom
+- scale
+
+# Different types of Curves
+- ease
+- bounce
+- bounceOut
+- decelerate
+- elastic-linear
 
 # Video Example
 <img src="https://github.com/PeterPaulez/repository/blob/main/api_login_app-1615120214725.gif?raw=true" width="400px">

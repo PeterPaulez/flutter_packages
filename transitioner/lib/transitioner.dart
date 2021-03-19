@@ -47,8 +47,8 @@ class Transitioner {
   /// [animation] is the type of animation [curveType] is the Curve style
   /// [replacement] is bool to show back button [curves] is the final Style translated into class
   Transitioner(
-      {@required this.context,
-      @required this.child,
+      {required this.context,
+      required this.child,
       this.animation = AnimationType.normal,
       this.duration = const Duration(milliseconds: 300),
       this.curveType = CurveType.ease,
@@ -147,7 +147,7 @@ class Transitioner {
 
   /// Shows Slide transition [curves] & [duration] & [type]
   void _slideTransition(String type) {
-    Offset offSetBegin;
+    Offset offSetBegin = Offset(0, 1);
     if (type == 'slideRight') {
       offSetBegin = Offset(-1, 0);
     } else if (type == 'slideLeft') {

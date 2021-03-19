@@ -1,26 +1,18 @@
-![](https://img.shields.io/badge/Version-0.0.2-informational?style=flat&logo=appveyor&logoColor=ff69b4&color=brightgreen)
+![](https://img.shields.io/badge/Version-0.1.0-informational?style=flat&logo=appveyor&logoColor=ff69b4&color=brightgreen)
 
-# Transitioner
+# Transitioner Package
 This package helps how to manage transitions between different views/pages.  
 I am going to add more types of transitions, keep posted.
 
-# Getting Started
+## Getting Started
 In the pubspec.yaml of your flutter project, add the following dependency:
 ```
 dependencies:
-    transitioner: ^0.0.2
+    transitioner: ^0.1.0
 ```
 
-# Use example case
+## Use example case
 ```dart
-/// Transitioner Class
-///
-/// [context] from the BuildContext
-/// [child] destiny View/Page
-/// [animation] type of transition to show
-/// [duration] duration of animation
-/// [replacement] replace entirely the scope or not
-/// [curveType] type of animationCurve to show
 Transitioner(
     context: context,
     child: UnoPage(),
@@ -31,7 +23,20 @@ Transitioner(
 );
 ```
 
-# Different types of principal Transition
+## Attributes
+List of possible attributes on Transitioner Class.
+
+### Required
+- context: from the BuildContext  
+- child: destiny View/Page Class
+
+### Optional
+- animation: Defaults Normal, type of transition to show  
+- duration: Default 300ms, duration of animation  
+- replacement: Default false, entirely the scope or not  
+- curveType: Default ease, type of animationCurve to show
+
+## Different types of principal Transition
 - normal
 - fadeIn
 - slideRight
@@ -40,12 +45,12 @@ Transitioner(
 - slideBottom
 - scale
 
-# Different types of Curves
+## Different types of Curves
 - ease
 - bounce
 - bounceOut
 - decelerate
 - elastic-linear
 
-# Video Example
+## Video Example
 <img src="https://github.com/PeterPaulez/repository/blob/main/api_login_app-1615120214725.gif?raw=true" width="400px">

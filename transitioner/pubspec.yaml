@@ -1,6 +1,6 @@
 name: transitioner
 description: This package helps how to manage transitions between different views/pages with custom curve animation also.
-version: 0.0.2
+version: 0.1.0
 homepage: https://github.com/PeterPaulez
 repository: https://github.com/PeterPaulez/flutter_packages/tree/master/transitioner
 issue_tracker: https://github.com/PeterPaulez/flutter_packages/issues
